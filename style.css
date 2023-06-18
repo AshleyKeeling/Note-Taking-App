@@ -2,6 +2,7 @@ body {
     height: 100em;
     background-image: linear-gradient( #00C9FF, #92FE9D);
     font-family: "Libre Franklin", sans-serif;
+    
 }
 
 
@@ -47,6 +48,7 @@ h3 {
 
 #note-btns {
     display: flex;
+    
 }
 
 #category-input {
@@ -55,6 +57,7 @@ h3 {
     border-radius: 1em;
     padding: 1em 1em;
     flex: 2;
+    appearance: auto;
 }
 
 #category-input:hover {
@@ -81,6 +84,7 @@ h3 {
 
 .note-item {
     background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 94, 0, 0.749); */
     border-radius: 1em;
     padding: 1rem 1rem;
     margin: 0.5em 0;
@@ -101,6 +105,8 @@ h3 {
     padding: 0;
     margin: 0;
     margin: 0 auto;
+    width: 4em;
+    text-align: center;
 }
 
 .note-text {
