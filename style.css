@@ -1,5 +1,5 @@
 body {
-    height: 100em;
+    height: 90em;
     background-image: linear-gradient( #00C9FF, #92FE9D);
     font-family: "Libre Franklin", sans-serif;
     
@@ -38,7 +38,7 @@ h3 {
 
 #note-input {
     display: flex;
-    padding: 1em 36em 4em 1em;
+    padding: 1em 36.5em 4em 1em;
     margin: 0 auto 0.5em;
     border-radius: 1em;
     border: 0;
@@ -84,13 +84,25 @@ h3 {
 
 .note-item {
     background-color: rgba(255, 255, 255, 0.5);
-    /* background-color: rgba(255, 94, 0, 0.749); */
     border-radius: 1em;
     padding: 1rem 1rem;
     margin: 0.5em 0;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 'date empty empty empty category'
                         'note note note note delBtn';
+}
+
+.note-item-work {
+    color: rgb(255, 0, 0);
+}
+
+.note-item-personal {
+    color: rgb(0, 0, 255);
+}
+
+.note-item-fitness {
+    color: rgb(66, 180, 1);
 }
 
 .note-date {
@@ -106,6 +118,7 @@ h3 {
     margin: 0;
     margin: 0 auto;
     width: 4em;
+    float: right;
     text-align: center;
 }
 
@@ -117,7 +130,7 @@ h3 {
     grid-area: delBtn;
     border-radius: 0.3em;
     border: 0;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.8);
     /* padding: 0; */
     padding: 0.5em;
     margin: auto auto;
